@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/novoltage.github.io/Ramptool/static/css/main.cd28e0c1.css",
+    "main.js": "/novoltage.github.io/Ramptool/static/js/main.0c076a52.js",
+    "static/js/453.0c6efbec.chunk.js": "/novoltage.github.io/Ramptool/static/js/453.0c6efbec.chunk.js",
+    "index.html": "/novoltage.github.io/Ramptool/index.html",
+    "main.cd28e0c1.css.map": "/novoltage.github.io/Ramptool/static/css/main.cd28e0c1.css.map",
+    "main.0c076a52.js.map": "/novoltage.github.io/Ramptool/static/js/main.0c076a52.js.map",
+    "453.0c6efbec.chunk.js.map": "/novoltage.github.io/Ramptool/static/js/453.0c6efbec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd28e0c1.css",
+    "static/js/main.0c076a52.js"
+  ]
+}
