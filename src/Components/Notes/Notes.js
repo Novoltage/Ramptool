@@ -19,8 +19,7 @@ export function Notes(){
       })
     
      useEffect(()=>{
-      localStorage.setItem("RAMPNOTES", JSON.stringify(bullets))
-     })
+      localStorage.setItem("RAMPNOTES", JSON.stringify(bullets))})
     
     
       function AddBullet(title) {
