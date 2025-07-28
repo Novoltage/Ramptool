@@ -12,14 +12,14 @@ import { DeleteAll } from './DeleteAll';
 export function Notes(){
 
     const [bullets, setBullets] = useState(()=> {
-        const localValue = localStorage.getItem("BULLETS")
+        const localValue = localStorage.getItem("RAMPNOTES")
         if(localValue == null) return[]
     
         return JSON.parse(localValue)
       })
     
      useEffect(()=>{
-      localStorage.setItem("BULLETS", JSON.stringify(bullets))
+      localStorage.setItem("RAMPNOTES", JSON.stringify(bullets))
      })
     
     
