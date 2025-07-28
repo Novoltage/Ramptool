@@ -7,7 +7,7 @@ export function Clicks(){
 
     const [points, setPoints ] = useState(()=> {
         const localValue = localStorage.getItem("CLICKS")
-        if(localValue == null) return[]
+        if(localValue == null) return[0]
     
         return JSON.parse(Number(localValue))
       });
