@@ -2,60 +2,61 @@
 
 import "./Notes.css"
 import { useEffect, useState } from 'react';
-import { NewBulletForm} from './NewBulletForm'
+import { NewBulletForm } from './NewBulletForm'
 import { BulletList } from './BulletList'
 import { DeleteAll } from './DeleteAll';
 
 
 
 
-export function Notes(){
+export function Notes() {
 
-    const [bullets, setBullets] = useState(()=> {
-        const localValue = localStorage.getItem("RAMPNOTES")
-        if(localValue == null) return[]
-    
-        return JSON.parse(localValue)
-      })
-    
-     useEffect(()=>{
-      localStorage.setItem("RAMPNOTES", JSON.stringify(bullets))})
-    
-    
-      function AddBullet(title) {
-        
-        setBullets(currentBullets => {
-          return [
-            ...currentBullets,
-            { id: crypto.randomUUID(), title }
-            ,
-          ]
-        }
-        )
-      }
-    
-      
-    function DeleteBullet(id){
-      setBullets(currentBullets => { 
-        return currentBullets.filter(bullet => bullet.id !==id)
-      })
+  const [notes, setNotes] = useState(() => {
+    const localValue = localStorage.getItem("NOTES")
+    if (localValue == null) return []
+
+    return JSON.parse(localValue)
+  })
+
+  useEffect(() => {
+    localStorage.setItem("NOTES", JSON.stringify(notes))
+  })
+
+
+  function AddBullet(title) {
+
+    setBullets(currentBullets => {
+      return [
+        ...currentBullets,
+        { id: crypto.randomUUID(), title }
+        ,
+      ]
     }
-     
-    function DeleteBullets(){
-      setBullets([])
-    }
-    
-      return (
-        <>
-        <section className='wrapper'>
-          <NewBulletForm onSubmit={AddBullet} />
-          <h1 className='header'>Bullet List </h1>
-          <BulletList bullets={bullets} DeleteBullet={DeleteBullet} />
-          <DeleteAll DeleteAll={DeleteBullets} bullets={bullets} />
-          
-          </section>
-          
-        </>
-      );
-    
+    )
+  }
+
+
+  function DeleteBullet(id) {
+    setNotes(currentBullets => {
+      return currentBullets.filter(notes => notes.id !== id)
+    })
+  }
+
+  function DeleteBullets() {
+    setNotes([])
+  }
+
+  return (
+    <>
+      <section className='wrapper'>
+        <NewBulletForm onSubmit={AddBullet} />
+        <h1 className='header'>Bullet List </h1>
+        <BulletList bullets={notes} DeleteBullet={DeleteBullet} />
+        <DeleteAll DeleteAll={DeleteBullets} bullets={notes} />
+
+      </section>
+
+    </>
+  );
+
 }
