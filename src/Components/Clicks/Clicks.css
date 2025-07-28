@@ -1,0 +1,166 @@
+
+
+
+
+
+.Grid{
+    display: grid;  
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+
+}
+
+
+.Clicks{
+    font-size: 10rem;
+    padding: 0;
+    margin: 0;
+}
+
+.Clicks-div{
+    margin: 0;
+    padding: 0;
+}
+.Clicker{
+
+    color: green;
+    width: 50vw;
+    aspect-ratio: 1/1;
+    font-size: 4rem;
+}
+
+.btn-11 { 
+    width: 50vw;
+    aspect-ratio: 1/1;
+    font-size: 4rem;
+    border: none;
+    background: rgb(11, 169, 50);
+      
+      overflow: hidden;
+  }
+  .btn-11:hover {
+      text-decoration: none;
+      color: #fff;
+  }
+  .btn-11:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: #fff;
+      animation: shiny-btn1 3s ease-in-out infinite;
+  }
+  .btn-11:hover{
+    opacity: .7;
+  }
+  .btn-11:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+  
+  
+  @keyframes shiny-btn1 {
+      0% { transform: scale(0) rotate(45deg); opacity: 0; }
+      80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+      81% { transform: scale(4) rotate(45deg); opacity: 1; }
+      100% { transform: scale(50) rotate(45deg); opacity: 0; }
+  }
+  
+
+.Big-button{
+
+}
+
+.Lower-button{
+
+}
+
+.Add{
+    width: 2rem;
+    color: green;
+    border-radius: .3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    aspect-ratio: 1/1;
+    text-align: center;
+    padding: 0;
+}
+
+.Minus{
+
+    width: 2rem;
+    color: red;
+    border-radius: .3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    aspect-ratio: 1/1;
+    text-align: center;
+    padding: 0;
+}
+
+.Reset {
+    width: 5rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+  background: red
+  }
+  .Reset:hover {
+    color: #f0094a;
+    background: transparent;
+     box-shadow:none;
+  }
+  .Reset:before,
+  .Reset:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:0.125rem;
+    width:0;
+    background: #f0094a;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .Reset:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .Reset:hover:before,
+  .Reset:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+  .custom-btn {
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
