@@ -25,7 +25,7 @@ export function Notes() {
 
   function AddBullet(title) {
 
-    setBullets(currentBullets => {
+    setNotes(currentBullets => {
       return [
         ...currentBullets,
         { id: crypto.randomUUID(), title }
