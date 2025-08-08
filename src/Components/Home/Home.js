@@ -47,11 +47,12 @@ export function Home() {
         default:
             return (
                 <div className="home-wrap">
-                    <h1 className="home-header">Tools</h1>
+                    <h1 className="home-header">Tools/Links</h1>
                     <div className="home-btns">
                         <button className="custom-btn btn-15" onClick={() => ListType(1)}  >Clicker</button>
                         <button className="custom-btn btn-16" onClick={() => ListType(2)}  >Calculator</button>
                         <button className="custom-btn btn-17" onClick={() => ListType(3)}  >Notes</button>
+                        <button className="custom-btn btn-19" onClick={() => ListType(0)}  >Work Done(unavailable)</button>
                         
                         <a href="https://rovrplus.aa.com/task" target="_blank" rel="noreferrer" className="custom-btn btn-18 a-tag">
                             Rovr+
@@ -61,6 +62,12 @@ export function Home() {
                         </a>
                         <a href="https://get.aa.com/GetNG/home" target="_blank" rel="noreferrer" className="custom-btn btn-18 a-tag">
                             GET
+                        </a>
+                        <a href="https://webref.aa.com/csp/fom/lcm/ROM.pdf" target="_blank" rel="noreferrer" className="custom-btn btn-18 a-tag">
+                            ROM
+                        </a>
+                        <a href="https://jetnet.aa.com/sites/safety-and-regulatory-compliance/document/292630/Dangerous-goods-manual" target="_blank" rel="noreferrer" className="custom-btn btn-18 a-tag">
+                            DG
                         </a>
 
                     </div>

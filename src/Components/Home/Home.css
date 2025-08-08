@@ -193,6 +193,42 @@
 .btn-17:active {
     top: 2px;
   }
+  .btn-19 {
+    width: 5rem;
+    background: #f49595;
+    color: #000;
+    border: none;
+    z-index: 1;
+    aspect-ratio: 1/1;
+  }
+.btn-19:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    border-radius: .3125rem;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    
+  }
+.btn-19:hover {
+    color: #000;
+  }
+.btn-19:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+    
+  }
+.btn-19:active {
+    top: 2px;
+  }
 
   .a-tag{
     align-content: center;
