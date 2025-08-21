@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Ramptool/static/css/main.364c620e.css",
-    "main.js": "/Ramptool/static/js/main.1a9e0c9e.js",
+    "main.css": "/Ramptool/static/css/main.3baf4974.css",
+    "main.js": "/Ramptool/static/js/main.d1e56ff2.js",
     "static/js/453.0c6efbec.chunk.js": "/Ramptool/static/js/453.0c6efbec.chunk.js",
     "index.html": "/Ramptool/index.html",
-    "main.364c620e.css.map": "/Ramptool/static/css/main.364c620e.css.map",
-    "main.1a9e0c9e.js.map": "/Ramptool/static/js/main.1a9e0c9e.js.map",
+    "main.3baf4974.css.map": "/Ramptool/static/css/main.3baf4974.css.map",
+    "main.d1e56ff2.js.map": "/Ramptool/static/js/main.d1e56ff2.js.map",
     "453.0c6efbec.chunk.js.map": "/Ramptool/static/js/453.0c6efbec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.364c620e.css",
-    "static/js/main.1a9e0c9e.js"
+    "static/css/main.3baf4974.css",
+    "static/js/main.d1e56ff2.js"
   ]
 }
