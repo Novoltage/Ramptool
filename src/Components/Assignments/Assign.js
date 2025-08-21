@@ -62,7 +62,7 @@ export function Assign() {
     return (
         <>
 
-            <section className="wrapper">
+            <section className="Awrapper">
                 <NewForm onSubmit={AddAss} />
                 <AssignList ass={ass} ToggleAss={ToggleAss} DeleteAss={DeleteAss} />
                 <div className="delAll-btn">
